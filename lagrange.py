@@ -5,7 +5,7 @@ def main():
         print("LAGRANGE")
         print("seleccion (1) si desea usar Lagrange simple")
         print("seleccion (2) si desea usar Lagrange multiple:")
-        opcion = input("")
+        opcion = int(input(""))
         if (opcion == 1 or  opcion == 2):
             prueba = False
 
@@ -16,7 +16,7 @@ def main():
         x,f,valor = Preparar_lagrange_simple()
         print
         print ("Su valor buscado es:")
-        print Lagrange(x,f,valor)
+        print (Lagrange(x,f,valor))
 
     if (opcion == 2):
         x = []
@@ -27,7 +27,7 @@ def main():
         x,y,f,valor1,valor2 = Preparar_lagrange_multiple()
         print
         print ("Su valor buscado de su interpolacion multiple es:")
-        print Lagrange_multiple(x,y,f,valor1,valor2)
+        print (Lagrange_multiple(x,y,f,valor1,valor2))
 
 
 def Lagrange(x,f,v):                        #Evaluar Lagrange
