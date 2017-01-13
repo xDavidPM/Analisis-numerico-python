@@ -32,7 +32,6 @@ def main():
 
     print ("\nMetodo de Newton\n")
     f = raw_input("Ingrese la funcion:\n")
-
     fx = sympify(f)
     derivada_fx = diff(fx)
     matriz = []

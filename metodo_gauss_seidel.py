@@ -4,8 +4,8 @@ from numpy.linalg import inv
 
 # Metodo de gauss seidel
 
-matrix = [[45.1,-25,0],[-25,29,-4],[0,-4,37]] # matriz de datos
-B = [[100],[100],[250]]                     # valores contanstantes
+matrix = [[5,-1,-1],[-1,4,-1],[-1,-1,4]] # matriz de datos
+B = [[10.1],[7.7],[7.4]]                     # valores contanstantes
 x0 = [[0],[0],[0]]                           # valores iniciales
 x1 = [[0],[0],[0]]                           # valores iniciales
 r = [[0],[0],[0]]                           # valores iniciales

@@ -2,11 +2,12 @@ from sympy import*
 
 f = ""
 
-print
+print()
 print ("Super calculo de integrales multiples con el metodo de simpson c:")
-print
-f = raw_input("Ingrese su funcion f(x,y):\n")
-print
+print()
+#f = raw_input("Ingrese su funcion f(x,y):\n")
+f = input("Ingrese su funcion f(x,y):\n")
+print()
 funcion = sympify(f)
 ax = input("Ingrese su parametro inicial:\n")
 bx = input("Ingrese su parametro final:\n")
@@ -23,7 +24,7 @@ def simpson_multiple(f,funcion,ax,bx,ay,by,mx,my):
   gxay = f.replace("y", "a")
   for i in range (0,my+1):
     #gx = gxay.evalf(subs =  {"a" : v})
-    print gxay
+    print (gxay)
     u = simpson(gxay,ax,bx,mx,v)
     r = r+[u]
     v = v +dy
@@ -35,7 +36,7 @@ def simpson_multiple(f,funcion,ax,bx,ay,by,mx,my):
 
 
 def simpson(funcion,a,b,m,v):
-  print v
+  print (v)
   h = (b-a)/float(m)
   s = 0
   x = a
@@ -49,7 +50,7 @@ def simpson(funcion,a,b,m,v):
   return resul
 
 def main():
-  print simpson_multiple(f,funcion,ax,bx,ay,by,mx,my)
+  print (simpson_multiple(f,funcion,ax,bx,ay,by,mx,my))
 
 if __name__ == "__main__":
   main()
